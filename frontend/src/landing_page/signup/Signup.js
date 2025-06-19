@@ -10,6 +10,7 @@ function Signup() {
     async function StartingServer(){
       await clientServer.get('/');
     }
+    StartingServer();
   },[]);
   
   const navigate = useNavigate();
