@@ -63,6 +63,9 @@ app.post('/newOrder',async(req,res)=>{
     await newOrder.save();
     res.json({message:"done"});
 });
+app.get('/',async(req,res)=>{
+    res.json({message:"Server Started"});
+})
 
 app.listen(PORT,()=>{
     console.log(`Server started at port${PORT}`);
