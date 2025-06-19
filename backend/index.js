@@ -12,7 +12,8 @@ const app=express();
 const allowedOrigins = [
     'http://localhost:3000',
     'http://localhost:3001',
-    "https://zerodha-learning.onrender.com"
+    "https://zerodha-learning.onrender.com",
+    "https://zerodhadashboard-e11a.onrender.com"
 ];
 
 app.use(cors({

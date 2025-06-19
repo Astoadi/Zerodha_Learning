@@ -85,7 +85,7 @@ function Navbar() {
                         <li className="nav-item mt-2 ms-2">
                           <a
                             className="btn btn-outline-primary w-100"
-                            href="http://localhost:3001/"
+                            href="https://zerodhadashboard-e11a.onrender.com"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
