@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const clientServer=axios.create({
-    baseURL:"http://localhost:8080",
+    baseURL:"https://zerodha-server-2453.onrender.com",
     withCredentials: true, 
 })
 export {clientServer}
