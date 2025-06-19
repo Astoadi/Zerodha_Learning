@@ -21,10 +21,22 @@ function Navbar() {
     };
     verifyCookie();
   }, [cookies, navigate, removeCookie]);
-  const Logout = () => {
-    removeCookie("token");
-    navigate("/login");
+  // const Logout = () => {
+  //   removeCookie("token");
+  //   navigate("/login");
+  // };
+  const Logout = async () => {
+    try {
+      await clientServer.get("/users/logout", {
+        withCredentials: true
+      });
+      setIsLoggedIn(false);
+      navigate("/login");
+    } catch (err) {
+      console.error("Logout failed:", err);
+    }
   };
+  
   return (
     <>
     <div className="container">
